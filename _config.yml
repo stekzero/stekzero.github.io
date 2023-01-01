@@ -1,0 +1,47 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+
+# Site settings
+title: Eko Setiyawan # name of the site
+author: Eko Setiyawan # name of site's author
+email: your-email@example.com # email of site's author
+url: "https://stekzero.github.io" # root address of the site
+baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if you're site shouldn't use a subpath)
+description: > # description of the site (multiple lines allowed)
+  a place for my thoughts and everything I like.
+github_username: stekzero
+
+permalink: /:slug.html
+
+# SEO Related
+google_site_verification  : "" # Replace this with your ID, or delete
+
+favicon: "favicon.ico" # name+extension of favicon (which must be put on the root folder)
+# goat_counter: "yoursitename" # put your GoatCounter name if you want to use GoatCounter analytics
+
+remote_theme: riggraz/no-style-please # if you are using GitHub Pages, change it to remote_theme: riggraz/no-style-please
+
+theme_config:
+  appearance: "light" # can be "light", "dark" or "auto"
+  back_home_text: ".." # customize text for homepage link in post layout
+  date_format: "%Y-%m-%d" # customize how date is formatted
+  show_description: true # show blog description in home page
+
+sass:
+  style: :compressed
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
